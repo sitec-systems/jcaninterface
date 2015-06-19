@@ -19,18 +19,6 @@ import java.io.IOException;
  */
 public interface Can extends Closeable
 {
-//    /**
-//     * Set a new bitrate on the device
-//     * @param bitrate New bitrate for the device
-//     */
-//    void setBitrate (final int bitrate);
-//    
-//    /**
-//     * Get the bitrate of an CAN-Device
-//     * @return Bitrate
-//     */
-//    int getBitrate();
-    
     /**
      * Sends an CAN Frame.
      * @param canFrame The frame to send
@@ -54,4 +42,22 @@ public interface Can extends Closeable
      * @since 1.0
      */
     void setFilter (final CanFilter filter) throws IOException;
+    
+    /**
+     * Sets the timeout for the receiving ({@link #receive() }). With value 
+     * <code>0</code> disables the timeout.
+     * @param timeout The timeout in milliseconds
+     * @throws IOException Setting of timeout has failed
+     * @since 1.0
+     */
+    void setTimeout (final int timeout) throws IOException;
+    
+    /**
+     * Gets the timeout for the receiving ({@link #receive() }). The value 
+     * <code>0</code> means the timeout is disabled.
+     * @return The timeout in milliseconds
+     * @throws IOException Setting of timeout has failed
+     * @since 1.0
+     */
+    int getTimeout () throws IOException;
 }
