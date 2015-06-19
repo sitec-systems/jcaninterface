@@ -30,10 +30,11 @@ public interface Can extends Closeable
     /**
      * Receives an CAN Frame.
      * @return Received frame
+     * @throws CanTimeoutException No frame received from CAN before timeout occured
      * @throws IOException If the receiving has failed
      * @since 1.0
      */
-    CanFrame receive() throws IOException;
+    CanFrame receive() throws CanTimeoutException, IOException;
     
     /**
      * Sets the filters for receiving CAN frames.
