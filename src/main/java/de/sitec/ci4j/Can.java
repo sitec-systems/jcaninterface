@@ -37,12 +37,20 @@ public interface Can extends Closeable
     CanFrame receive() throws CanTimeoutException, IOException;
     
     /**
-     * Sets the filters for receiving CAN frames.
+     * Adds an filter for receiving CAN frames.
      * @param filter The filter
-     * @throws IOException If setting of filter has failed
+     * @throws IOException If setting of filters has failed
      * @since 1.0
      */
-    void setFilter (final CanFilter filter) throws IOException;
+    void addFilter (final CanFilter filter) throws IOException;
+    
+    /**
+     * Removes all added filters from CAN receiving.
+     * @throws IOException If setting of filters has failed
+     * @see #addFilter(de.sitec.ci4j.CanFilter) 
+     * @since 1.0
+     */
+    void removeFilters () throws IOException;
     
     /**
      * Sets the timeout for the receiving ({@link #receive() }). With value 
