@@ -47,7 +47,7 @@ public interface Can extends Closeable
     /**
      * Removes all added filters from CAN receiving.
      * @throws IOException If setting of filters has failed
-     * @see #addFilter(de.sitec.ci4j.CanFilter) 
+     * @see #addFilter(de.sitec.ci4j.CanFilter...)  
      * @since 1.0
      */
     void removeFilters () throws IOException;
