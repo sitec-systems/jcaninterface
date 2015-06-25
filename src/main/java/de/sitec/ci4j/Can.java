@@ -42,7 +42,7 @@ public interface Can extends Closeable
      * @throws IOException If setting of filters has failed
      * @since 1.0
      */
-    void addFilter (final CanFilter filter) throws IOException;
+    void addFilter (final CanFilter... filter) throws IOException;
     
     /**
      * Removes all added filters from CAN receiving.
