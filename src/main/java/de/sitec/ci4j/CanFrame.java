@@ -1,13 +1,16 @@
 /*
  * Project: 15_0013_CF4J
  * $Header: $
- * Author:  Mattes Standfuss
+ * Author:  Mattes Standfuss, Robert Lehmann
  * Last Change:
  *    by:   $Author: $
  *    date: $Date:   $
  * Copyright (c): sitec systems GmbH, 2015
  */
 package de.sitec.ci4j;
+
+import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * An value object for CAN frame.
@@ -116,6 +119,63 @@ public class CanFrame
         }
         
         return sb.toString();
+    }
+
+    /**
+     * Generates the hash code of a specific CAN frame.
+     * 
+     * @return Hash code of a CAN frame
+     * @since 1.0
+     */
+    @Override
+    public int hashCode()
+    {
+        int hash = 7;
+        hash = 13 * hash + this.id;
+        hash = 13 * hash + Objects.hashCode(this.type);
+        hash = 13 * hash + this.length;
+        hash = 13 * hash + Arrays.hashCode(this.data);
+        return hash;
+    }
+
+    /**
+     * Compares two CAN frames with each other.
+     * 
+     * If both CAN frames does have the same content (same id, same payload, 
+     * same type) then the function returns {@code true}
+     * 
+     * @return {@code true} if the two CAN frames are exactly equal.
+     * @since 1.0
+     */
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (obj == null)
+        {
+            return false;
+        }
+        if (getClass() != obj.getClass())
+        {
+            return false;
+        }
+        final CanFrame other = (CanFrame) obj;
+        if (this.id != other.id)
+        {
+            return false;
+        }
+        if (this.type != other.type)
+        {
+            return false;
+        }
+        if (this.length != other.length)
+        {
+            return false;
+        }
+        if (!Arrays.equals(this.data, other.data))
+        {
+            return false;
+        }
+        return true;
     }
     
     /**
