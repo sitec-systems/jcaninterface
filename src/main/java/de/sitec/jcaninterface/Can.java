@@ -7,7 +7,7 @@
  *    date: $Date:   $
  * Copyright (c): sitec systems GmbH, 2015
  */
-package de.sitec.ci4j;
+package de.sitec.jcaninterface;
 
 import java.io.Closeable;
 import java.io.IOException;

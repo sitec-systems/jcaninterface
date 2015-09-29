@@ -7,9 +7,9 @@
  *    date: $Date:   $
  * Copyright (c): sitec systems GmbH, 2015
  */
-package de.sitec.ci4j;
+package de.sitec.jcaninterface;
 
-import de.sitec.ci4j.CanFrame.Type;
+import de.sitec.jcaninterface.CanFrame.Type;
 
 /**
  * An value object for CAN filter settings.
