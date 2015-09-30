@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.sitec</groupId>
     <artifactId>jCanInterface</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,8 +18,8 @@
     </organization>
     
     <scm>
-        <connection>scm:svn:http://172.16.40.5/svn/15_0013/trunk</connection>
-        <developerConnection>scm:svn:http://172.16.40.5/svn/15_0013/trunk</developerConnection>
+        <connection>scm:svn:http://172.16.40.5/svn/15_0013/tags/REL-1.0.0</connection>
+        <developerConnection>scm:svn:http://172.16.40.5/svn/15_0013/tags/REL-1.0.0</developerConnection>
     </scm>
     
     <build>
