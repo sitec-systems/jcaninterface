@@ -1,10 +1,26 @@
+/**
+ * jCanInterface is an interface for the communication in Controller Area 
+ * Network (CAN) from Java.
+ * 
+ * Copyright (C) 2015 sitec systems GmbH <http://www.sitec-systems.de>
+ * 
+ * This file is part of jCanInterface.
+ * 
+ * jModuleConnect is free software: you can redistribute it and/or modify it 
+ * under the terms of the GNU Lesser General Public License as published by the 
+ * Free Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ * 
+ * jModuleConnect is distributed in the hope that it will be useful, but WITHOUT 
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more 
+ * details.
+ * 
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with jCanInterface. If not, see <http://www.gnu.org/licenses/>.
+ */
 /*
- * Project: 15_0013_CF4J
- * $Header: $
- * Author:  Mattes Standfuss, Robert Lehmann
- * Last Change:
- *    by:   $Author: $
- *    date: $Date:   $
+ * Author: Mattes Standfuss
  * Copyright (c): sitec systems GmbH, 2015
  */
 package de.sitec.jcaninterface;
