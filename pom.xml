@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.sitec</groupId>
     <artifactId>jCanInterface</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,7 +27,7 @@
     <scm>
         <connection>scm:git:https://${server.ip}/redmine/projekte/15_0013/scm_15_0013.git</connection>
         <developerConnection>scm:git:https://${server.ip}/redmine/projekte/15_0013/scm_15_0013.git</developerConnection>
-        <tag>REL-1.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
