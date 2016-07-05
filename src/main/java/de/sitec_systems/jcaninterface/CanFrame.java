@@ -23,7 +23,7 @@
  * Author: Mattes Standfuss
  * Copyright (c): sitec systems GmbH, 2015
  */
-package de.sitec.jcaninterface;
+package de.sitec_systems.jcaninterface;
 
 import java.util.Arrays;
 import java.util.Objects;

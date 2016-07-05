@@ -23,9 +23,9 @@
  * Author: Mattes Standfuss
  * Copyright (c): sitec systems GmbH, 2015
  */
-package de.sitec.jcaninterface;
+package de.sitec_systems.jcaninterface;
 
-import de.sitec.jcaninterface.CanFrame.Type;
+import de.sitec_systems.jcaninterface.CanFrame.Type;
 
 /**
  * An value object for CAN filter settings.

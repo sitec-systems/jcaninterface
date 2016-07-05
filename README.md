@@ -1,6 +1,6 @@
 # About
 
-**jCanInterface** is an interface for the communication in Controller Area Network (CAN).
+**jCanInterface** is an interface for the communication in Controller Area Network (CAN) from Java.
 
 This interface provides typically methods for communication in CAN. It can be 
 implemented by other to provide the access logic to CAN device**.

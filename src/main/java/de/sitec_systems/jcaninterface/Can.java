@@ -23,7 +23,7 @@
  * Author: Mattes Standfuss
  * Copyright (c): sitec systems GmbH, 2015
  */
-package de.sitec.jcaninterface;
+package de.sitec_systems.jcaninterface;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -63,7 +63,7 @@ public interface Can extends Closeable
     /**
      * Removes all added filters from CAN receiving.
      * @throws IOException If setting of filters has failed
-     * @see #addFilters(de.sitec.jcaninterface.CanFilter...)  
+     * @see #addFilters(de.sitec_systems.jcaninterface.CanFilter...)  
      * @since 1.0
      */
     void removeFilters () throws IOException;
